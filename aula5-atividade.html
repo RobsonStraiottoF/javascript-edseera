@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>Aula 5 - Laço de repetição - Atividade</title>
+    </head>
+
+    <body>
+        <h1>Estrutura Laço de Repetição</h1>
+        <p>crie um programa que solicite qual a tabuada que será impressa na tela</p>
+        <p>
+            2 x 0 = 0
+            2 x 1 = 1
+            ...
+        </p>
+        <hr>
+        <script>
+            let qltabuada = parseInt(prompt("escolha uma tabuada de 0 a 10"))
+            let contador = 0;
+
+            while (contador <= 10) {
+                let tabuada = contador * qltabuada
+                document.write(`${qltabuada}  X   ${contador}  =  ${tabuada}  <br>`)
+                contador++
+            }
+                
+            
+
+            
+            
+        </script>
+    </body>
+</html>

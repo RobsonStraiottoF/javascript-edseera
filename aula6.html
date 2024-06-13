@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>aula 6 js</title>
+</head>
+<body>
+    <button id="btnAlerta">Mostrar Alerta</button>
+    <p id="textoParagrafo">Texto Inicial</p>
+    <button id="textoBotao">Alerta texto</button>
+
+    <script>
+        const btnAlerta = document.getElementById("btnAlerta")
+        const textoParagrafo = document.getElementById("textoParagrafo")
+        const textoBotao = document.getElementById("textoBotao")
+
+        btnAlerta.addEventListener("click", function(){
+            alert("botão de Alerta Clicado!");
+        })
+
+        textoParagrafo.addEventListener("click", function(){
+            textoParagrafo.textContent = "mudou de texto o paragráfo!!!"
+        })
+
+        textoBotao.addEventListener("click", function(){
+            textoBotao.textContent = "mudou o texto do botão"
+        })
+    </script>
+
+</body>
+</html>

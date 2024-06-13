@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Aula 5 - Laço de Repetição</title>
+    </head>
+    
+    <body>
+        <h1>Estrutura Laço de Repetição em java script</h1>
+        <p>imprima na tela uma sequência numérica de 1 a 10</p>
+        <hr>
+        <script>
+            
+
+            let qtdesenhas = parseInt(prompt("digite uma quantidade de senhas"))
+            var contador = 0;
+
+            while (contador <= qtdesenhas) {
+                document.write(contador + " - ")   
+                ++contador
+            }
+        
+            document.write("<hr>")
+
+            ////////////////////////////////
+
+            for(let contador = 0; contador <= qtdesenhas; contador++){
+                document.write(contador + " - ")
+            }
+
+            document.write("<hr>")
+
+            /////////////
+
+            var contador = 0;
+            do{
+                document.write(contador + " - ")
+                ++contador
+
+            }while (contador <= qtdesenhas) {
+                
+            }
+
+        </script>
+    </body>
+</html>
