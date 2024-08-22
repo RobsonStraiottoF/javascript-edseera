@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = new Array (1,2,3,4,5);
+        num.push("6");
+        document.write(num) 
+        document.write("<br>")
+        document.write(num.length)
+        document.write("<br>")
+
+    
+        let numb = num.map(function(item){
+            let dobro = item*2
+            return dobro;
+
+        })
+
+        document.write(numb)
+
+        document.write("<br>")
+
+        let numeros = numb.filter( function(numberpar){
+            
+            if (numberpar %2 === 0 ) {
+                document.write(numberpar)
+                return numberpar;
+            }
+
+        
+
+        })
+        document.write("<br>")
+        //4
+        let soma = 0
+        for(n = 0 ;n < numeros.length;n++ ){
+            soma += numeros[n]
+           
+        }
+        //4
+         document.write(soma);
+        document.write("<br>")
+
+            if (soma %2===0) {
+                document.write(`${soma} é par`)
+            } else {
+                document.write(`${soma} é impar`)
+            }
+         
+
+
+        
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

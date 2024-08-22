@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>atividade de array</title>
+    </head>
+    <body>
+        <!--1.Crie um array chamado numeros com os valores: 1, 2, 3, 4, 5. Em seguida, imprima o numero 4 no console.
+    2.Crie um array chamado numeros com os valores: 3, 8, 12, 7, 10, 15. Use o método forEach para contar quantos números pares existem no array e mostre o total de números pares no console.
+    3.Crie um array chamado numeros com os valores: 2, 4, 6, 8. Use o método map para criar um novo array onde cada número é elevado ao quadrado. Mostre o novo array no console.
+    4.Crie um array chamado nomes com os valores: 'Alice', 'Bruno', 'Carla'. Use o método map para criar um novo array onde cada nome é transformado em uma frase do tipo "Olá, [nome]!". Mostre o novo array no console.
+    5.Crie um array chamado numeros com os valores: 5, 12, 18, 7, 9, 14. Use o método filter para criar um novo array contendo apenas os números maiores que 10. Mostre o novo array no console.-->
+        <script>
+            //1
+            let numeros = new Array(1,2,3,4,5)
+            console.log(numeros)
+            console.log(numeros[3])
+            //2
+            let num = new Array(3, 8, 12, 7, 10, 15)
+            num.forEach(function(item){
+                console.log(item)
+            })
+            //3
+            let numb = new Array(2, 4, 6, 8)
+            let listnumb = numb.map(function(item){
+                let calculo = item * item           
+                console.log(calculo)
+
+            })
+            //4
+            let nomes = new Array('Alice', 'Bruno', 'Carla')
+            const saudacoes = nomes.map(nome => `Olá, ${nome}!`);
+                
+            //5
+            let number = new Array(5, 12, 18, 7, 9, 14)
+            let numero = number.filter(number => number > 10)
+            console.log(numero);
+            
+
+        </script>
+    </body>
+</html>

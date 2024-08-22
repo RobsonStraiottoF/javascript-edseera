@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        #box{
+            border:1px solid #000000;
+            min-height: 50PX;
+            margin-bottom: 20px;
+            background: #ededed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade</h1>
+    <div id="box">
+
+    </div>
+   <!-- Atividade 1: Verificar se um número é positivo, negativo ou zero. E retorne na tela a mensagem.
+Atividade 2: Calcular a média de três números.
+Atividade 3: Determinar o maior de dois números.
+Atividade 4: Converter temperatura de Celsius para Fahrenheit
+Atividade 5: Calcular a área de um círculo dado o raio
+Atividade 6: Encontrar a raiz quadrada de um número.
+Atividade 7: Calcular o IMC (Índice de Massa Corporal).-->
+
+<script>
+ 
+ function imprimir(mensagem){
+    let caixinha =document.getElementById("box");
+    caixinha.innerHTML += mensagem +"<hr>";
+ }
+
+    //atividade 1: Verificar se um número é positivo, negativo ou zero. E retorne na tela a mensagem.
+
+   let num = 7
+   if (num < 0) {
+    imprimir("é negativo")
+   } else {
+    imprimir("é positivo")
+   }
+
+    //Atividade 2: Calcular a média de três números.
+   let num1 = 5
+   let num2 = 8
+   let num3 = 14
+   let media = (num1+num2+num3)/3
+   imprimir(`a média de ${num1} + ${num2} + ${num3} é ${media}`)
+
+   //Atividade 3: Determinar o maior de dois números.
+   let numb1 = 6
+   let numb2 = 8
+   
+   if (numb1 > numb2) {
+    imprimir(`o número ${num1} é o maior`)
+   } else {
+    imprimir(`o numero ${numb2} é maior`)
+   }
+   //Atividade 4: Converter temperatura de Celsius para Fahrenheit
+   let temperatura = 18;
+
+    imprimir("A temperatura em Fahrenheit é "+(temperatura*1.8+32));
+
+    //Atividade 5: Calcular a área de um círculo dado o raio
+    let raio=5;
+    const pi=3.14;
+
+    imprimir("A area é:"+((raio*raio)*pi));
+
+    //Atividade 6: Encontrar a raiz quadrada de um número.
+    let numb = 25
+    let raiz = numb / 5
+    imprimir(`a raiz de ${numb} é ${raiz}`)
+
+    //Atividade 7: Calcular o IMC (Índice de Massa Corporal)
+    let peso = 80
+    let altura = 1.50
+
+    let altura2 = altura*altura
+    let imc = peso / altura2
+    imprimir(`o IMC é de ${imc} `)
+
+
+</script>
+</body>
+</html>

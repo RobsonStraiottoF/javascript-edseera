@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<htm lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula de JavaScript</title>
+    </head>
+    <body>
+        <script>
+            let pessoa = {
+                nome : "Robson",
+                idade : 12,
+                profissao : "Prostituta",
+                salario : 2000,
+            }
+            //acessando dados de um projeto
+            console.log(pessoa);
+            console.log(pessoa.nome, pessoa.idade);
+            console.log(pessoa['salario']);
+
+            //modificando dados de uma propriedade
+            pessoa.idade = 30;
+            console.log('pessoa')
+
+            //adicionar nova propriedade
+            pessoa.genero = "SR-71";
+            console.log(pessoa);
+
+            //remover a propriedade
+            delete pessoa.salario
+            console.log(pessoa)
+
+            //Métodos de um objeto
+            let carro = {
+                marca : "Toyota",
+                modelo : "Corola",
+                ano :2020,
+                ligar :function(){
+                    console.log(`o carro ${this.marca} está ligado `);
+                }
+            }
+
+            //Atividade Criando um objeto de produto: crie um objeto que apresente um produto em uma loja(ex: cll, laptop ou uma camisa). Cada objeto deve ter propriedades como:
+            //nome, preço marca, e em estoque. Acesse e modifique as propriedades do objeto, e adicione pelo menos uma nova propriedade, delete uma propriedade a sua escolha
+
+            
+                teclado = {
+                nome : "Teclado Gamer Redragon Shiva Preto RGB K512RGB ABNT2",
+                marca : "Redragon",
+                cor : "preto",
+                modelo : "K512RGB",
+                preco : "207,99",
+                estoque : "Sim",
+                }
+            
+            console.log(teclado)
+            teclado.preco = 150;
+            teclado.tipo = "usb-a";
+            delete teclado.estoque;
+            
+            
+
+        </script>
+    </body>
+</html>

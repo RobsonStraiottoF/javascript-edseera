@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>aula 6 js</title>
+</head>
+<body>
+    <button id="btnAlerta">Mostrar Alerta</button>
+    <p id="textoParagrafo">Texto Inicial</p>
+    <button id="textoBotao">Alerta texto</button>
+    <br>
+    <hr>
+    <div id="cordiv" style="width: 100px; height: 100px; background-color: blue;"></div>
+    <div id="adicionarParágrafo">adicionar Parágrafo</div>
+    <button id="toggleBotao">mostrar/esconder</button>
+    <button id="resetar">Resetar</button>
+    <script>
+        const btnAlerta = document.getElementById("btnAlerta")
+        const textoParagrafo = document.getElementById("textoParagrafo")
+        const textoBotao = document.getElementById("textoBotao")
+        const cordiv = document.getElementById("cordiv")
+        const adicionarParágrafo = document.getElementById("adicionarParágrafo")
+        const toggleBotao = document.getElementById("toggleBotao")
+        const resetar = document.getElementById("resetar")
+
+        
+
+        btnAlerta.addEventListener("click", function(){
+            alert("botão de Alerta Clicado!");
+        })
+
+        textoParagrafo.addEventListener("click", function(){
+            textoParagrafo.textContent = "mudou de texto o paragráfo!!!"
+        })
+
+        textoBotao.addEventListener("click", function(){
+            textoBotao.textContent = "mudou o texto do botão"
+        })
+
+        cordiv.addEventListener("click", function(){
+            cordiv.style.backgroundColor = "green"
+        })
+        
+        adicionarParágrafo.addEventListener("click", function(){
+            const paragrafo = document.createElement("p")
+            paragrafo.innerText = "novo parágrafo adicionado"
+            document.body.appendChild(paragrafo)
+        })
+
+        toggleBotao.addEventListener("click", function(){
+            if(cordiv.style.display === "none"){
+                cordiv.style.display = "block"
+            }else{
+                cordiv.style.display = "none"
+            }
+        })
+
+        resetar.addEventListener("click", function(){
+            textoParagrafo.textContent = "texto Inicial";
+            textoBotao.textContent = "Alterar Texto";
+            cordiv.style.backgroundColor = "blue"
+
+            const paragrafoExtra = document.querySelectorAll("body > p");
+            paragrafoExtra.forEach((p, index) => {
+                if(index >= 1){
+                    p.remove()
+                }
+            });
+        })
+
+
+    </script>
+
+</body>
+</html>

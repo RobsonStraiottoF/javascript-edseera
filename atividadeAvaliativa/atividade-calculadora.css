@@ -1,0 +1,73 @@
+.campodigitacao{
+    margin-top: 50px;
+    margin-left: 40%;
+    border-radius: 20px;
+    background-color: #2F2F2F;
+    width: 200px;
+    padding-left: 25px;
+}
+
+#numero1{
+    margin-top: 20px;
+    
+}
+#numero2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#adicao{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #5ACB89;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+#subtracao{
+    background-color: #5ACB89;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+
+}
+#divisao{
+    background-color: #5ACB89;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+#multiplicacao{
+    background-color: #5ACB89;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 15px;
+
+
+}
+#igual{
+    margin-top: 20px;
+    background-color: whitesmoke;
+    padding: 5px;
+    width: 165px;
+    border-radius: 10px;
+    
+
+}
